@@ -1,0 +1,33 @@
+  {
+    "permissions": {
+      "allow": [
+        "Bash",
+        "Edit",
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "WebFetch",
+        "WebSearch"
+      ],
+      "deny": [
+        "Bash(rm -rf:*)",
+        "Bash(rm -fr:*)",
+        "Bash(: > :*)",
+        "Bash(dd :*)",
+        "Bash(mkfs:*)",
+        "Bash(shred:*)",
+        "Bash(sudo rm:*)",
+        "Bash(sudo:*)",
+        "Bash(chmod 777:*)",
+        "Bash(kill -9:*)",
+        "Read(./.env)",
+        "Read(./.env.*)",
+        "Read(./secrets/**)",
+        "Read(~/.ssh/**)",
+        "Read(~/.aws/**)",
+        "Edit(./.env)",
+        "Edit(./.env.*)"
+      ]
+    }
+  }
